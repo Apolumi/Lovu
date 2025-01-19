@@ -1,0 +1,95 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff6473;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ff6473;
+}
+
+/* Seção principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#servicos h2 {
+    color: #ff6473;
+    margin-bottom: 20px;
+}
+
+/* Lista de serviços */
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite adaptação em telas menores */
+}
+
+/* Estilo para cada serviço */
+.service {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.service h3 {
+    color: #ff6473;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.service p {
+    color: #555;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Imagens dos serviços */
+.service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .service-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .service {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
